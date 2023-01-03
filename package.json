@@ -1,0 +1,19 @@
+{
+  "name": "gpt-share",
+  "version": "1.0.0",
+  "description": "A command line tool for sharing files using a local server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js --upload-dir $UPLOAD_DIR --password $PASSWORD --port $PORT"
+  },
+  "bin": {
+    "gptShare": "server.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1",
+    "formidable": "^1.2.2",
+    "yargs": "^15.4.1"
+  }
+}
